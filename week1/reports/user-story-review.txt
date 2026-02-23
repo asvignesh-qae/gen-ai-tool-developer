@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Story Quality Review</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; max-width: 1200px; margin: 40px auto; padding: 20px; background-color: #f8f9fa; color: #212529; line-height: 1.6;">
+
+    <!-- HEADER -->
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <h1 style="margin: 0; font-size: 32px; font-weight: 700;">E-commerce User Story Quality Review</h1>
+        <p style="margin: 10px 0 0 0; opacity: 0.9; font-size: 14px;">Comprehensive Analysis &amp; Improvement Recommendations</p>
+    </div>
+
+    <!-- JIRA LINK BOX -->
+    <div style="background: white; border-left: 5px solid #0052CC; border-radius: 8px; padding: 15px 20px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-between;">
+        <div>
+            <span style="font-size: 14px; color: #6c757d; font-weight: 500;">📋 Jira Story Reference</span>
+        </div>
+        <div>
+            <a href="https://vignesh-qae.atlassian.net/browse/MFLP-9" target="_blank" style="background-color: #0052CC; color: white; padding: 8px 16px; border-radius: 5px; text-decoration: null; font-weight: 600; font-size: 14px; display: inline-block; transition: background-color 0.3s;">MFLP-9</a>
+        </div>
+    </div>
+
+    <div style="background: white; border-radius: 10px; padding: 30px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h2 style="color: #667eea; font-size: 24px; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #667eea; padding-bottom: 10px;">Quality Assessment</h2>
+        
+        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+            <thead>
+                <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <th style="padding: 15px; text-align: left; font-weight: 600;">Parameter</th>
+                    <th style="padding: 15px; text-align: left; font-weight: 600;">Analysis</th>
+                    <th style="padding: 15px; text-align: center; font-weight: 600; width: 120px;">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid #e9ecef;">
+                    <td style="padding: 15px; font-weight: 600; color: #495057;">
+                        <div style="display: flex; align-items: center;">
+                            <span style="font-size: 24px; margin-right: 10px;">🎯</span>
+                            Clarity
+                        </div>
+                    </td>
+                    <td style="padding: 15px; color: #6c757d;">
+                        The story follows the classic As‑a / I‑want / So‑that format, making intent clear. The role “marketing‑eligible user” is defined, though the exact segment definition could be more explicit. UI expectations (banner position, opacity, dismiss behavior) are detailed, aiding developers. Minor terminology refinements would improve absolute clarity.
+                    </td>
+                    <td style="padding: 15px; text-align: center;">
+                        <span style="display: inline-block; background-color: #17a2b8; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 700; font-size: 16px;">16/20</span>
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e9ecef; background-color: #f8f9fa;">
+                    <td style="padding: 15px; font-weight: 600; color: #495057;">
+                        <div style="display: flex; align-items: center;">
+                            <span style="font-size: 24px; margin-right: 10px;">✅</span>
+                            Completeness
+                        </div>
+                    </td>
+                    <td style="padding: 15px; color: #6c757d;">
+                        Acceptance criteria cover display logic, UI layout, dismissal timing, responsiveness, admin toggle, performance, analytics, A/B testing, and several edge cases. Missing are validation rules for discount‑code lifecycle (expiry, single‑use), handling of overlapping segment definitions, explicit error handling if admin configuration fails, and a clear no‑JS fallback. Localization considerations are also absent.
+                    </td>
+                    <td style="padding: 15px; text-align: center;">
+                        <span style="display: inline-block; background-color: #ffc107; color: #212529; padding: 8px 16px; border-radius: 20px; font-weight: 700; font-size: 16px;">14/20</span>
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e9ecef;">
+                    <td style="padding: 15px; font-weight: 600; color: #495057;">
+                        <div style="display: flex; align-items: center;">
+                            <span style="font-size: 24px; margin-right: 10px;">💰</span>
+                            Business Value
+                        </div>
+                    </td>
+                    <td style="padding: 15px; color: #6c757d;">
+                        The banner targets high‑value and at‑risk segments, directly supporting conversion‑rate uplift and average order value growth. Configurability enables rapid marketing experiments, feeding revenue‑growth KPIs. Analytics events provide attribution data, and GDPR considerations are addressed, aligning well with core e‑commerce objectives.
+                    </td>
+                    <td style="padding: 15px; text-align: center;">
+                        <span style="display: inline-block; background-color: #28a745; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 700; font-size: 16px;">18/20</span>
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e9ecef; background-color: #f8f9fa;">
+                    <td style="padding: 15px; font-weight: 600; color: #495057;">
+                        <div style="display: flex; align-items: center;">
+                            <span style="font-size: 24px; margin-right: 10px;">🧪</span>
+                            Testability
+                        </div>
+                    </td>
+                    <td style="padding: 15px; color: #6c757d;">
+                        Each criterion is measurable (visibility, position, opacity, dismissal timing, analytics events). Positive (eligible user sees banner) and negative (non‑eligible user does not) scenarios are defined, as are edge cases (incognito, ad‑blocker, query‑param variant). Adding tests for invalid segment configs would complete the matrix, but overall the story is highly testable.
+                    </td>
+                    <td style="padding: 15px; text-align: center;">
+                        <span style="display: inline-block; background-color: #17a2b8; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 700; font-size: 16px;">17/20</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px; font-weight: 600; color: #495057;">
+                        <div style="display: flex; align-items: center;">
+                            <span style="font-size: 24px; margin-right: 10px;">⚙️</span>
+                            Technical Feasibility
+                        </div>
+                    </td>
+                    <td style="padding: 15px; color: #6c757d;">
+                        Implementation can leverage existing component libraries and a feature‑flag service. Required integrations with the user‑segment service and admin configuration API are standard in a micro‑service architecture. Lazy‑loading and localStorage usage meet the <100 ms performance target. No payment‑gateway changes are needed; only GDPR‑compliant storage handling must be verified.
+                    </td>
+                    <td style="padding: 15px; text-align: center;">
+                        <span style="display: inline-block; background-color: #28a745; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 700; font-size: 16px;">18/20</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="background: white; border-left: 5px solid #28a745; border-radius: 10px; padding: 30px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h2 style="color: #28a745; font-size: 28px; margin-top: 0; margin-bottom: 15px;">Overall Quality Score</h2>
+        <div style="text-align: center; padding: 20px;">
+            <div style="display: inline-block; background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%); color: white; padding: 20px 40px; border-radius: 15px; box-shadow: 0 4px 8px rgba(23,162,184,0.3);">
+                <span style="font-size: 48px; font-weight: 700;">83</span>
+                <span style="font-size: 24px; font-weight: 400;"> / 100</span>
+                <div style="font-size: 18px; margin-top: 8px; opacity: 0.95;">Good Quality</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: white; border-radius: 10px; padding: 30px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h2 style="color: #dc3545; font-size: 24px; margin-top: 0; margin-bottom: 20px; border-bottom: 3px solid #dc3545; padding-bottom: 10px;">
+            <span style="font-size: 24px; margin-right: 10px;">🔧</span>
+            Improvement Recommendations
+        </h2>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="padding: 15px; margin-bottom: 12px; background-color: #fff3cd; border-left: 4px solid #ffc107; border-radius
